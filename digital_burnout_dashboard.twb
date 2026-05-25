@@ -1,0 +1,2562 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0410.0924                               -->
+<workbook original-version='18.1' source-build='2026.1.1 (20261.26.0410.0924)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='cleaned_burnout_data' inline='true' name='federated.0yhz3xa09osp6c140vxkk1f0od8s' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cleaned_burnout_data' name='textscan.1j0o1j50c75v4w1gy58601ewvw55'>
+            <connection class='textscan' directory='C:/Users/Dell/Downloads' filename='cleaned_burnout_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1j0o1j50c75v4w1gy58601ewvw55' name='cleaned_burnout_data.csv' table='[cleaned_burnout_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='user_id' ordinal='0' />
+            <column datatype='integer' name='age' ordinal='1' />
+            <column datatype='string' name='occupation' ordinal='2' />
+            <column datatype='string' name='work_mode' ordinal='3' />
+            <column datatype='string' name='device_usage_type' ordinal='4' />
+            <column datatype='real' name='daily_screen_time' ordinal='5' />
+            <column datatype='real' name='social_media_hours' ordinal='6' />
+            <column datatype='real' name='doomscrolling_duration' ordinal='7' />
+            <column datatype='integer' name='app_switch_frequency' ordinal='8' />
+            <column datatype='integer' name='notification_count' ordinal='9' />
+            <column datatype='integer' name='smartphone_unlocks' ordinal='10' />
+            <column datatype='integer' name='late_night_device_usage' ordinal='11' />
+            <column datatype='integer' name='focus_sessions' ordinal='12' />
+            <column datatype='real' name='deep_work_hours' ordinal='13' />
+            <column datatype='integer' name='distraction_frequency' ordinal='14' />
+            <column datatype='integer' name='task_completion_rate' ordinal='15' />
+            <column datatype='integer' name='concentration_score' ordinal='16' />
+            <column datatype='real' name='sleep_hours' ordinal='17' />
+            <column datatype='integer' name='sleep_quality' ordinal='18' />
+            <column datatype='integer' name='caffeine_intake' ordinal='19' />
+            <column datatype='real' name='physical_activity' ordinal='20' />
+            <column datatype='integer' name='stress_level' ordinal='21' />
+            <column datatype='integer' name='workspace_quality' ordinal='22' />
+            <column datatype='real' name='meeting_hours' ordinal='23' />
+            <column datatype='integer' name='internet_stability' ordinal='24' />
+            <column datatype='integer' name='remote_work_days' ordinal='25' />
+            <column datatype='real' name='motivation_level' ordinal='26' />
+            <column datatype='integer' name='mental_fatigue' ordinal='27' />
+            <column datatype='integer' name='emotional_exhaustion' ordinal='28' />
+            <column datatype='integer' name='work_satisfaction' ordinal='29' />
+            <column datatype='string' name='mental_state' ordinal='30' />
+            <column datatype='integer' name='burnout_risk' ordinal='31' />
+            <column datatype='integer' name='productivity_score' ordinal='32' />
+            <column datatype='string' name='productivity_category' ordinal='33' />
+            <column datatype='string' name='burnout_category' ordinal='34' />
+            <column datatype='string' name='screen_time_category' ordinal='35' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user_id]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>user_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>occupation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[occupation]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>occupation</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>work_mode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[work_mode]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>work_mode</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>device_usage_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[device_usage_type]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>device_usage_type</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>daily_screen_time</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[daily_screen_time]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>daily_screen_time</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>social_media_hours</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[social_media_hours]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>social_media_hours</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>doomscrolling_duration</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[doomscrolling_duration]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>doomscrolling_duration</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>app_switch_frequency</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[app_switch_frequency]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>app_switch_frequency</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>notification_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[notification_count]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>notification_count</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>smartphone_unlocks</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[smartphone_unlocks]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>smartphone_unlocks</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>late_night_device_usage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[late_night_device_usage]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>late_night_device_usage</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>focus_sessions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[focus_sessions]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>focus_sessions</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deep_work_hours</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[deep_work_hours]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>deep_work_hours</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distraction_frequency</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[distraction_frequency]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>distraction_frequency</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>task_completion_rate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[task_completion_rate]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>task_completion_rate</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>concentration_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[concentration_score]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>concentration_score</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sleep_hours</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sleep_hours]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>sleep_hours</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sleep_quality</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sleep_quality]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>sleep_quality</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>caffeine_intake</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[caffeine_intake]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>caffeine_intake</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>physical_activity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[physical_activity]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>physical_activity</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stress_level</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stress_level]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>stress_level</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>workspace_quality</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[workspace_quality]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>workspace_quality</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>meeting_hours</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[meeting_hours]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>meeting_hours</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>internet_stability</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[internet_stability]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>internet_stability</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>remote_work_days</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[remote_work_days]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>remote_work_days</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>motivation_level</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[motivation_level]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>motivation_level</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mental_fatigue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[mental_fatigue]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>mental_fatigue</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>emotional_exhaustion</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[emotional_exhaustion]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>emotional_exhaustion</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>work_satisfaction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[work_satisfaction]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>work_satisfaction</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mental_state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[mental_state]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>mental_state</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>burnout_risk</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[burnout_risk]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>burnout_risk</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>productivity_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[productivity_score]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>productivity_score</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>productivity_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[productivity_category]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>productivity_category</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>burnout_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[burnout_category]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>burnout_category</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>screen_time_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[screen_time_category]</local-name>
+            <parent-name>[cleaned_burnout_data.csv]</parent-name>
+            <remote-alias>screen_time_category</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='cleaned_burnout_data.csv' datatype='table' name='[__tableau_internal_object_id__].[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column caption='App Switch Frequency' datatype='integer' name='[app_switch_frequency]' role='measure' type='quantitative' />
+      <column caption='Burnout Category' datatype='string' name='[burnout_category]' role='dimension' type='nominal' />
+      <column caption='Burnout Risk' datatype='integer' name='[burnout_risk]' role='measure' type='quantitative' />
+      <column caption='Caffeine Intake' datatype='integer' name='[caffeine_intake]' role='measure' type='quantitative' />
+      <column caption='Concentration Score' datatype='integer' name='[concentration_score]' role='measure' type='quantitative' />
+      <column caption='Daily Screen Time' datatype='real' name='[daily_screen_time]' role='measure' type='quantitative' />
+      <column caption='Deep Work Hours' datatype='real' name='[deep_work_hours]' role='measure' type='quantitative' />
+      <column caption='Device Usage Type' datatype='string' name='[device_usage_type]' role='dimension' type='nominal' />
+      <column caption='Distraction Frequency' datatype='integer' name='[distraction_frequency]' role='measure' type='quantitative' />
+      <column caption='Doomscrolling Duration' datatype='real' name='[doomscrolling_duration]' role='measure' type='quantitative' />
+      <column caption='Emotional Exhaustion' datatype='integer' name='[emotional_exhaustion]' role='measure' type='quantitative' />
+      <column caption='Focus Sessions' datatype='integer' name='[focus_sessions]' role='measure' type='quantitative' />
+      <column caption='Internet Stability' datatype='integer' name='[internet_stability]' role='measure' type='quantitative' />
+      <column caption='Late Night Device Usage' datatype='integer' name='[late_night_device_usage]' role='measure' type='quantitative' />
+      <column caption='Meeting Hours' datatype='real' name='[meeting_hours]' role='measure' type='quantitative' />
+      <column caption='Mental Fatigue' datatype='integer' name='[mental_fatigue]' role='measure' type='quantitative' />
+      <column caption='Mental State' datatype='string' name='[mental_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Motivation Level' datatype='real' name='[motivation_level]' role='measure' type='quantitative' />
+      <column caption='Notification Count' datatype='integer' name='[notification_count]' role='measure' type='quantitative' />
+      <column caption='Occupation' datatype='string' name='[occupation]' role='dimension' type='nominal' />
+      <column caption='Physical Activity' datatype='real' name='[physical_activity]' role='measure' type='quantitative' />
+      <column caption='Productivity Category' datatype='string' name='[productivity_category]' role='dimension' type='nominal' />
+      <column caption='Productivity Score' datatype='integer' name='[productivity_score]' role='measure' type='quantitative' />
+      <column caption='Remote Work Days' datatype='integer' name='[remote_work_days]' role='measure' type='quantitative' />
+      <column caption='Screen Time Category' datatype='string' name='[screen_time_category]' role='dimension' type='nominal' />
+      <column caption='Sleep Hours' datatype='real' name='[sleep_hours]' role='measure' type='quantitative' />
+      <column caption='Sleep Quality' datatype='integer' name='[sleep_quality]' role='measure' type='quantitative' />
+      <column caption='Smartphone Unlocks' datatype='integer' name='[smartphone_unlocks]' role='measure' type='quantitative' />
+      <column caption='Social Media Hours' datatype='real' name='[social_media_hours]' role='measure' type='quantitative' />
+      <column caption='Stress Level' datatype='integer' name='[stress_level]' role='measure' type='quantitative' />
+      <column caption='Task Completion Rate' datatype='integer' name='[task_completion_rate]' role='measure' type='quantitative' />
+      <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+      <column caption='Work Mode' datatype='string' name='[work_mode]' role='dimension' type='nominal' />
+      <column caption='Work Satisfaction' datatype='integer' name='[work_satisfaction]' role='measure' type='quantitative' />
+      <column caption='Workspace Quality' datatype='integer' name='[workspace_quality]' role='measure' type='quantitative' />
+      <column-instance column='[mental_state]' derivation='None' name='[none:mental_state:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Mental State)' hidden='true' name='[Action (Mental State)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[mental_state]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Occupation)' hidden='true' name='[Action (Occupation)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[occupation]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Screen Time Category)' hidden='true' name='[Action (Screen Time Category)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[screen_time_category]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Work Mode)' hidden='true' name='[Action (Work Mode)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[work_mode]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Dell/AppData/Local/Temp/TableauTemp/#TableauTemp_04365ln163n6f012aypg50ztz44l.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/20/2026 06:52:08 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>user_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[user_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>user_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5000000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age</remote-alias>
+              <ordinal>1</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>42</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>occupation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[occupation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>occupation</remote-alias>
+              <ordinal>2</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>work_mode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[work_mode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>work_mode</remote-alias>
+              <ordinal>3</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>device_usage_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[device_usage_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>device_usage_type</remote-alias>
+              <ordinal>4</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>daily_screen_time</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[daily_screen_time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>daily_screen_time</remote-alias>
+              <ordinal>5</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>247</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>social_media_hours</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[social_media_hours]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>social_media_hours</remote-alias>
+              <ordinal>6</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>144</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>doomscrolling_duration</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[doomscrolling_duration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>doomscrolling_duration</remote-alias>
+              <ordinal>7</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>87</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>app_switch_frequency</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[app_switch_frequency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>app_switch_frequency</remote-alias>
+              <ordinal>8</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>240</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>notification_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[notification_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>notification_count</remote-alias>
+              <ordinal>9</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>380</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>smartphone_unlocks</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[smartphone_unlocks]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>smartphone_unlocks</remote-alias>
+              <ordinal>10</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>285</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>late_night_device_usage</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[late_night_device_usage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>late_night_device_usage</remote-alias>
+              <ordinal>11</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>focus_sessions</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[focus_sessions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>focus_sessions</remote-alias>
+              <ordinal>12</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>deep_work_hours</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[deep_work_hours]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>deep_work_hours</remote-alias>
+              <ordinal>13</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>122</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>distraction_frequency</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[distraction_frequency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>distraction_frequency</remote-alias>
+              <ordinal>14</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>119</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>task_completion_rate</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[task_completion_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>task_completion_rate</remote-alias>
+              <ordinal>15</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>concentration_score</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[concentration_score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>concentration_score</remote-alias>
+              <ordinal>16</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sleep_hours</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[sleep_hours]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sleep_hours</remote-alias>
+              <ordinal>17</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>71</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sleep_quality</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sleep_quality]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sleep_quality</remote-alias>
+              <ordinal>18</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>caffeine_intake</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[caffeine_intake]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>caffeine_intake</remote-alias>
+              <ordinal>19</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>physical_activity</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[physical_activity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>physical_activity</remote-alias>
+              <ordinal>20</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stress_level</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[stress_level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stress_level</remote-alias>
+              <ordinal>21</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>workspace_quality</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[workspace_quality]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>workspace_quality</remote-alias>
+              <ordinal>22</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>meeting_hours</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[meeting_hours]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>meeting_hours</remote-alias>
+              <ordinal>23</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>120</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>internet_stability</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[internet_stability]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>internet_stability</remote-alias>
+              <ordinal>24</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>remote_work_days</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[remote_work_days]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>remote_work_days</remote-alias>
+              <ordinal>25</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>motivation_level</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[motivation_level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>motivation_level</remote-alias>
+              <ordinal>26</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mental_fatigue</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[mental_fatigue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mental_fatigue</remote-alias>
+              <ordinal>27</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>emotional_exhaustion</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[emotional_exhaustion]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>emotional_exhaustion</remote-alias>
+              <ordinal>28</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>work_satisfaction</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[work_satisfaction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>work_satisfaction</remote-alias>
+              <ordinal>29</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mental_state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[mental_state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mental_state</remote-alias>
+              <ordinal>30</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>burnout_risk</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[burnout_risk]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>burnout_risk</remote-alias>
+              <ordinal>31</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>101</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>productivity_score</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[productivity_score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>productivity_score</remote-alias>
+              <ordinal>32</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>101</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>productivity_category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[productivity_category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>productivity_category</remote-alias>
+              <ordinal>33</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>burnout_category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[burnout_category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>burnout_category</remote-alias>
+              <ordinal>34</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>screen_time_category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[screen_time_category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>screen_time_category</remote-alias>
+              <ordinal>35</ordinal>
+              <family>cleaned_burnout_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:mental_state:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Balanced&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Focused&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Distracted&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Burnout&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='cleaned_burnout_data.csv' id='cleaned_burnout_data.csv_9CE1A8BC7E294634B5BAAF8DD1BBAE15'>
+            <properties context=''>
+              <relation connection='textscan.1j0o1j50c75v4w1gy58601ewvw55' name='cleaned_burnout_data.csv' table='[cleaned_burnout_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='user_id' ordinal='0' />
+                  <column datatype='integer' name='age' ordinal='1' />
+                  <column datatype='string' name='occupation' ordinal='2' />
+                  <column datatype='string' name='work_mode' ordinal='3' />
+                  <column datatype='string' name='device_usage_type' ordinal='4' />
+                  <column datatype='real' name='daily_screen_time' ordinal='5' />
+                  <column datatype='real' name='social_media_hours' ordinal='6' />
+                  <column datatype='real' name='doomscrolling_duration' ordinal='7' />
+                  <column datatype='integer' name='app_switch_frequency' ordinal='8' />
+                  <column datatype='integer' name='notification_count' ordinal='9' />
+                  <column datatype='integer' name='smartphone_unlocks' ordinal='10' />
+                  <column datatype='integer' name='late_night_device_usage' ordinal='11' />
+                  <column datatype='integer' name='focus_sessions' ordinal='12' />
+                  <column datatype='real' name='deep_work_hours' ordinal='13' />
+                  <column datatype='integer' name='distraction_frequency' ordinal='14' />
+                  <column datatype='integer' name='task_completion_rate' ordinal='15' />
+                  <column datatype='integer' name='concentration_score' ordinal='16' />
+                  <column datatype='real' name='sleep_hours' ordinal='17' />
+                  <column datatype='integer' name='sleep_quality' ordinal='18' />
+                  <column datatype='integer' name='caffeine_intake' ordinal='19' />
+                  <column datatype='real' name='physical_activity' ordinal='20' />
+                  <column datatype='integer' name='stress_level' ordinal='21' />
+                  <column datatype='integer' name='workspace_quality' ordinal='22' />
+                  <column datatype='real' name='meeting_hours' ordinal='23' />
+                  <column datatype='integer' name='internet_stability' ordinal='24' />
+                  <column datatype='integer' name='remote_work_days' ordinal='25' />
+                  <column datatype='real' name='motivation_level' ordinal='26' />
+                  <column datatype='integer' name='mental_fatigue' ordinal='27' />
+                  <column datatype='integer' name='emotional_exhaustion' ordinal='28' />
+                  <column datatype='integer' name='work_satisfaction' ordinal='29' />
+                  <column datatype='string' name='mental_state' ordinal='30' />
+                  <column datatype='integer' name='burnout_risk' ordinal='31' />
+                  <column datatype='integer' name='productivity_score' ordinal='32' />
+                  <column datatype='string' name='productivity_category' ordinal='33' />
+                  <column datatype='string' name='burnout_category' ordinal='34' />
+                  <column datatype='string' name='screen_time_category' ordinal='35' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_8E60994209B9418F98D812805AA1D50D]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Digital Burnout Analytics Dashboard' type='sheet' worksheet='Average Burnout Risk by Occupation' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Digital Burnout Analytics Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_E45A9023CBB6463897019F5EB55F9FEA]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Digital Burnout Analytics Dashboard' type='sheet' worksheet='Average burnout by screen-time group' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Digital Burnout Analytics Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_05CBFDA504E647ECA6A0E640E0F01197]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Digital Burnout Analytics Dashboard' type='sheet' worksheet='Mental State Distribution' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Digital Burnout Analytics Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4_1E8D7EA7E3A74C7CBCED18718CF7D018]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Digital Burnout Analytics Dashboard' type='sheet' worksheet='Productivity By Work Mode' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Digital Burnout Analytics Dashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Average Burnout Risk by Occupation'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_burnout_data' name='federated.0yhz3xa09osp6c140vxkk1f0od8s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yhz3xa09osp6c140vxkk1f0od8s'>
+            <column-instance column='[burnout_risk]' derivation='Avg' name='[avg:burnout_risk:qk]' pivot='key' type='quantitative' />
+            <column caption='Burnout Risk' datatype='integer' name='[burnout_risk]' role='measure' type='quantitative' />
+            <column caption='Mental State' datatype='string' name='[mental_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[occupation]' derivation='None' name='[none:occupation:nk]' pivot='key' type='nominal' />
+            <column caption='Occupation' datatype='string' name='[occupation]' role='dimension' type='nominal' />
+            <column caption='Screen Time Category' datatype='string' name='[screen_time_category]' role='dimension' type='nominal' />
+            <column caption='Work Mode' datatype='string' name='[work_mode]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0yhz3xa09osp6c140vxkk1f0od8s].[Action (Mental State)]'>
+            <groupfilter function='member' level='[mental_state]' member='&quot;Distracted&quot;' user:ui-action-filter='[Action3_05CBFDA504E647ECA6A0E640E0F01197]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0yhz3xa09osp6c140vxkk1f0od8s].[Action (Screen Time Category)]'>
+            <groupfilter function='member' level='[screen_time_category]' member='&quot;Low Usage&quot;' user:ui-action-filter='[Action2_E45A9023CBB6463897019F5EB55F9FEA]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0yhz3xa09osp6c140vxkk1f0od8s].[Action (Work Mode)]'>
+            <groupfilter function='member' level='[work_mode]' member='&quot;Hybrid&quot;' user:ui-action-filter='[Action4_1E8D7EA7E3A74C7CBCED18718CF7D018]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0yhz3xa09osp6c140vxkk1f0od8s].[none:occupation:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0yhz3xa09osp6c140vxkk1f0od8s].[avg:burnout_risk:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[Action (Screen Time Category)]</column>
+            <column>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[Action (Mental State)]</column>
+            <column>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[Action (Work Mode)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0yhz3xa09osp6c140vxkk1f0od8s].[avg:burnout_risk:qk]' value='78' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0yhz3xa09osp6c140vxkk1f0od8s].[none:occupation:nk]' value='19' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[none:occupation:nk]</rows>
+        <cols>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[avg:burnout_risk:qk]</cols>
+      </table>
+      <simple-id uuid='{EF9BF62E-A501-4ECC-B333-C73F5DC83DEA}' />
+    </worksheet>
+    <worksheet name='Average burnout by screen-time group'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_burnout_data' name='federated.0yhz3xa09osp6c140vxkk1f0od8s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yhz3xa09osp6c140vxkk1f0od8s'>
+            <column-instance column='[burnout_risk]' derivation='Avg' name='[avg:burnout_risk:qk]' pivot='key' type='quantitative' />
+            <column caption='Burnout Risk' datatype='integer' name='[burnout_risk]' role='measure' type='quantitative' />
+            <column caption='Mental State' datatype='string' name='[mental_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[screen_time_category]' derivation='None' name='[none:screen_time_category:nk]' pivot='key' type='nominal' />
+            <column caption='Occupation' datatype='string' name='[occupation]' role='dimension' type='nominal' />
+            <column caption='Screen Time Category' datatype='string' name='[screen_time_category]' role='dimension' type='nominal' />
+            <column caption='Work Mode' datatype='string' name='[work_mode]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0yhz3xa09osp6c140vxkk1f0od8s].[Action (Mental State)]'>
+            <groupfilter function='member' level='[mental_state]' member='&quot;Distracted&quot;' user:ui-action-filter='[Action3_05CBFDA504E647ECA6A0E640E0F01197]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0yhz3xa09osp6c140vxkk1f0od8s].[Action (Occupation)]'>
+            <groupfilter function='level-members' level='[occupation]' user:ui-action-filter='[Action1_8E60994209B9418F98D812805AA1D50D]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0yhz3xa09osp6c140vxkk1f0od8s].[Action (Work Mode)]'>
+            <groupfilter function='member' level='[work_mode]' member='&quot;Hybrid&quot;' user:ui-action-filter='[Action4_1E8D7EA7E3A74C7CBCED18718CF7D018]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[Action (Occupation)]</column>
+            <column>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[Action (Mental State)]</column>
+            <column>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[Action (Work Mode)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[avg:burnout_risk:qk]</rows>
+        <cols>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[none:screen_time_category:nk]</cols>
+      </table>
+      <simple-id uuid='{4966BD77-D0D7-4673-8DD5-5D1374E0AE1F}' />
+    </worksheet>
+    <worksheet name='Mental State Distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_burnout_data' name='federated.0yhz3xa09osp6c140vxkk1f0od8s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yhz3xa09osp6c140vxkk1f0od8s'>
+            <column-instance column='[user_id]' derivation='CountD' name='[ctd:user_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Mental State' datatype='string' name='[mental_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[mental_state]' derivation='None' name='[none:mental_state:nk]' pivot='key' type='nominal' />
+            <column caption='Occupation' datatype='string' name='[occupation]' role='dimension' type='nominal' />
+            <column caption='Screen Time Category' datatype='string' name='[screen_time_category]' role='dimension' type='nominal' />
+            <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+            <column caption='Work Mode' datatype='string' name='[work_mode]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0yhz3xa09osp6c140vxkk1f0od8s].[Action (Occupation)]'>
+            <groupfilter function='level-members' level='[occupation]' user:ui-action-filter='[Action1_8E60994209B9418F98D812805AA1D50D]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0yhz3xa09osp6c140vxkk1f0od8s].[Action (Screen Time Category)]'>
+            <groupfilter function='member' level='[screen_time_category]' member='&quot;Low Usage&quot;' user:ui-action-filter='[Action2_E45A9023CBB6463897019F5EB55F9FEA]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0yhz3xa09osp6c140vxkk1f0od8s].[Action (Work Mode)]'>
+            <groupfilter function='member' level='[work_mode]' member='&quot;Hybrid&quot;' user:ui-action-filter='[Action4_1E8D7EA7E3A74C7CBCED18718CF7D018]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[Action (Occupation)]</column>
+            <column>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[Action (Screen Time Category)]</column>
+            <column>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[Action (Work Mode)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0yhz3xa09osp6c140vxkk1f0od8s].[none:mental_state:nk]' />
+              <wedge-size column='[federated.0yhz3xa09osp6c140vxkk1f0od8s].[ctd:user_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F18AA355-E8A7-4BAF-A955-7BDC797891CF}' />
+    </worksheet>
+    <worksheet name='Productivity By Work Mode'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_burnout_data' name='federated.0yhz3xa09osp6c140vxkk1f0od8s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yhz3xa09osp6c140vxkk1f0od8s'>
+            <column-instance column='[productivity_score]' derivation='Avg' name='[avg:productivity_score:qk]' pivot='key' type='quantitative' />
+            <column caption='Mental State' datatype='string' name='[mental_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[work_mode]' derivation='None' name='[none:work_mode:nk]' pivot='key' type='nominal' />
+            <column caption='Occupation' datatype='string' name='[occupation]' role='dimension' type='nominal' />
+            <column caption='Productivity Score' datatype='integer' name='[productivity_score]' role='measure' type='quantitative' />
+            <column caption='Screen Time Category' datatype='string' name='[screen_time_category]' role='dimension' type='nominal' />
+            <column caption='Work Mode' datatype='string' name='[work_mode]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0yhz3xa09osp6c140vxkk1f0od8s].[Action (Mental State)]'>
+            <groupfilter function='member' level='[mental_state]' member='&quot;Distracted&quot;' user:ui-action-filter='[Action3_05CBFDA504E647ECA6A0E640E0F01197]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0yhz3xa09osp6c140vxkk1f0od8s].[Action (Occupation)]'>
+            <groupfilter function='level-members' level='[occupation]' user:ui-action-filter='[Action1_8E60994209B9418F98D812805AA1D50D]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0yhz3xa09osp6c140vxkk1f0od8s].[Action (Screen Time Category)]'>
+            <groupfilter function='member' level='[screen_time_category]' member='&quot;Low Usage&quot;' user:ui-action-filter='[Action2_E45A9023CBB6463897019F5EB55F9FEA]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[Action (Occupation)]</column>
+            <column>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[Action (Screen Time Category)]</column>
+            <column>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[Action (Mental State)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#499894' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[none:work_mode:nk]</rows>
+        <cols>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[avg:productivity_score:qk]</cols>
+      </table>
+      <simple-id uuid='{0F2F7552-0E9C-49F0-832B-E2B3C7F15A4B}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Digital Burnout Analytics Dashboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Digital Burnout &amp; Productivity Analytics Dashboard</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='860' maxwidth='1550' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98018' id='23' param='horz' type-v2='layout-flow' w='98968' x='516' y='991'>
+            <zone h='98018' id='20' param='horz' type-v2='layout-flow' w='88645' x='516' y='991'>
+              <zone h='98018' id='12' param='horz' type-v2='layout-flow' w='88645' x='516' y='991'>
+                <zone h='98018' id='5' param='vert' type-v2='layout-flow' w='88645' x='516' y='991'>
+                  <zone h='7187' id='7' type-v2='title' w='88645' x='516' y='991'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='90831' id='6' type-v2='layout-basic' w='88645' x='516' y='8178'>
+                    <zone h='45422' id='14' name='Average burnout by screen-time group' w='43041' x='46120' y='53587'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='45409' id='15' name='Average Burnout Risk by Occupation' w='43041' x='46120' y='8178'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='45413' id='9' name='Productivity By Work Mode' w='45604' x='516' y='8178'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='45418' id='21' name='Mental State Distribution' w='45604' x='516' y='53591'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98018' id='22' is-fixed='true' param='vert' type-v2='layout-flow' w='10323' x='89161' y='991'>
+              <zone h='16604' id='24' name='Mental State Distribution' pane-specification-id='0' param='[federated.0yhz3xa09osp6c140vxkk1f0od8s].[none:mental_state:nk]' type-v2='color' w='10323' x='89161' y='991'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run>Digital Burnout &amp; Productivity Analytics Dashboard</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='26' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98018' id='25' param='vert' type-v2='layout-flow' w='98968' x='516' y='991'>
+                <zone h='7187' id='7' type-v2='title' w='88645' x='516' y='991'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45413' id='9' is-fixed='true' name='Productivity By Work Mode' w='45604' x='516' y='8178'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45409' id='15' is-fixed='true' name='Average Burnout Risk by Occupation' w='43041' x='46120' y='8178'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45422' id='14' is-fixed='true' name='Average burnout by screen-time group' w='43041' x='46120' y='53587'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45418' id='21' is-fixed='true' name='Mental State Distribution' w='45604' x='516' y='53591'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='16604' id='24' name='Mental State Distribution' pane-specification-id='0' param='[federated.0yhz3xa09osp6c140vxkk1f0od8s].[none:mental_state:nk]' type-v2='color' w='10323' x='89161' y='991'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{5FF67803-EDBA-4239-ADAB-0FEF686A8CD1}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='Average Burnout Risk by Occupation'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{79899A7D-24FC-46E4-A934-6D8EB951AF7F}' />
+    </window>
+    <window class='worksheet' name='Productivity By Work Mode'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{ED981E2F-9507-497F-BBC3-E4418734441F}' />
+    </window>
+    <window class='worksheet' name='Mental State Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0yhz3xa09osp6c140vxkk1f0od8s].[none:mental_state:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[none:mental_state:nk]</field>
+            <field>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[none:user_id:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{81803941-D801-4922-ABA7-A0C0ECF639FE}' />
+    </window>
+    <window class='worksheet' name='Average burnout by screen-time group'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[none:screen_time_category:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B6F6127B-A5B1-4D3D-9E01-A411192A31E6}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Digital Burnout Analytics Dashboard'>
+      <viewpoints>
+        <viewpoint name='Average Burnout Risk by Occupation' />
+        <viewpoint name='Average burnout by screen-time group'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[none:screen_time_category:nk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[avg:burnout_risk:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[avg:burnout_risk:qk]</field>
+                    <field>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[none:screen_time_category:nk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>39.616825147078941</value>
+                  <value>&quot;Low Usage&quot;</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+        </viewpoint>
+        <viewpoint name='Mental State Distribution'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields />
+                    <y-fields />
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[ctd:user_id:qk]</field>
+                    <field>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[none:mental_state:nk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>58472</value>
+                  <value>&quot;Distracted&quot;</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+          <highlight>
+            <color-one-way>
+              <field>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[none:mental_state:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Productivity By Work Mode'>
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[avg:productivity_score:qk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[none:work_mode:nk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[avg:productivity_score:qk]</field>
+                    <field>[federated.0yhz3xa09osp6c140vxkk1f0od8s].[none:work_mode:nk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>74.592334792721303</value>
+                  <value>&quot;Hybrid&quot;</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{FA6580E7-363A-4DCB-A44D-83BED5F2BE77}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Average Burnout Risk by Occupation' width='192'>
+      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
+      JjnN/w8IIpB772quCQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Average burnout by screen-time group' width='192'>
+      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
+      rkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Digital Burnout Analytics Dashboard' width='192'>
+      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
+      NaoAVJKa/x9QBdCrEQmoHQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Mental State Distribution' width='192'>
+      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
+      AAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='155' name='Productivity By Work Mode' width='192'>
+      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
+      7uLC7Rp3ouf+O/E+UhPcUTlBSaQZY5WR2jebNu/Vo/8fqmKg5NJZbnQJxr9X09u5+6pV2zW/
+      UhPckThBADo2qQm2H6kJFsLO5AjQykwmU1t3QTRBKsIcQIZA9tEaw0kZAglNkwAITZMACE2T
+      AAhNk6tAQtPkCCA0TQIgNE0CIDRNAiA0TQIgNE0CIDRNAiA0TQLQhlTFiNLKZdGiafI0aBsw
+      5u9h7Ze7OXXtFqCjs//TJLz5IoNkCnlr6mk2vrcRmxXi4VNY/FJYizchAXAwtXgPKcn78Xrl
+      93w6qicu6nXO7fiUZQvXM3PRNAbJDIv3lF8lXwnhxfkT6Xt/m4t9ZmOVIZBDKWRs34kp9rfM
+      GNWzdlZpnQf9X0jktT7H2Lz3clt30LmUFlPk9yjBXl543f/PTsXjEgBHUjJJP/koMdGBWA92
+      3Bg2KoKKkzkyvYqF0pIiXH19Wj5DYBMkAI50qYAL3v0IsvGWEF1IKKFFVyiSk+J65X8vpUf3
+      bq26DTkHcCSlBpN7d7rYarOc2VqmXwTKKSlWebBLIRkZhXWfdcFnQF8esePcORIAR+vVUybR
+      ahZ3AiKepKQ0h5yc2k9u/ZhPzpofISiO12dOJNgO58ESAEerrKIaO8x83eHpCYmb2nDKefMV
+      9n+WQvKXPfno9REtfjOPnAM4kr4zrjduYLTVpqqoeOPlZatR1HPxZ8yv4nn09HFO2WFOegmA
+      I/X2xa/kEoW2/uPOnyXP2xcfuQ/w07y70Z0KqqpavioJgCN5DmZI0Gm+P3T/NOsquRnp6MIH
+      WU3XrmlGo+0jJaDmnyffNZhAO1wskAA4lDfRE5+mfOtydtXP165y/fha1hz2Y/wz/dq0d07l
+      /CbmLljF/rxKrCbQLzvIiuWpuMePtssrqaQo3uFUitM+I2XLeVTPLrjcrqHa1Ju4xNeZaI/L
+      Gh2GmbL0bWzYfpCzlTq8PDvTyXyDCpMrYRN+Q0J8sF1eTSsBaCP3pmt/jD69LV/GLe53d7r6
+      hi8ubzkJgNA0OQcQmiYBEJomARCaJgEQmiYBEJomARCaJgEQmiYBEJomARCaJgEQmiYBEJom
+      ARCaJgEQmiYBEJomARCaJgEQmiYBEJomARCaJgEQmiYBEJomARCaJgEQmiYBEJomARCaJgEQ
+      miYBEJomARCaJgEQmiYBEJomARCaJgEQmiYBEJomARCaJgEQmiYBEJomARCaJgEQmiYBEJr2
+      f0D/08g+PsPbAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
